@@ -1,6 +1,6 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
-import profileImage from '@/assets/profile-placeholder.jpg';
+import profileImage from '@/assets/profile-photo.jpeg';
 
 const HeroSection = () => {
   return (
@@ -81,11 +81,11 @@ const HeroSection = () => {
           {/* Profile Image */}
           <div className="flex-shrink-0 animate-fade-in animation-delay-300">
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
+              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl ring-4 ring-primary/10">
                 <img
                   src={profileImage}
                   alt="Harichandana Thoopukari"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               {/* Decorative elements */}

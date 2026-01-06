@@ -3,14 +3,14 @@ import { ExternalLink, Github, Users, Lightbulb, Target } from 'lucide-react';
 const projects = [
   {
     title: 'Healthbot-AI',
-    event: 'Smart India Hackathon 2025',
+    event: 'Smart India Hackathon 2025 (University Level)',
     description:
       'A multilingual AI-powered chatbot designed to educate rural and semi-urban communities about preventive healthcare, symptoms, and vaccination schedules.',
     problem: 'Lack of accessible healthcare information in rural areas.',
     solution: 'Developed a multilingual chatbot offering accurate, localized health guidance.',
     role: 'Backend Developer & Presenter — handled core backend logic, data integration, and presentation.',
     impact:
-      'Demonstrated at SIH 2025, showcasing potential to improve healthcare access for underserved populations.',
+      'Selected at University Level for SIH 2025, showcasing potential to improve healthcare access for underserved populations.',
     technologies: ['Python', 'AI/ML', 'NLP', 'API Integration'],
     github: 'https://github.com/HarichandanaThoopukari/my-projects/tree/main/heaIthbotprojectgithub',
     featured: true,
@@ -19,15 +19,15 @@ const projects = [
     title: 'Stock Market Analysis',
     event: 'Denovate Hack, Hyderabad',
     description:
-      'A web platform providing actionable financial insights and portfolio advice with real-time stock data integration.',
+      'A web platform providing actionable financial insights and portfolio advice with real-time stock data integration, powered by simple AI algorithms.',
     features: [
       'User-friendly UI for entering portfolios',
       'Real-time stock data integration via Pathway',
-      'Automated billing using Flexprice',
+      'Simple AI-powered analysis and predictions',
       'Usage tracking and plain-English analysis output',
     ],
-    role: 'Backend Developer — implemented data processing logic and API integrations.',
-    technologies: ['JavaScript', 'API Integration', 'Pathway', 'Flexprice'],
+    role: 'Backend Developer — implemented data processing logic, Node.js backend, and API integrations.',
+    technologies: ['JavaScript', 'Node.js', 'Simple AI', 'API Integration', 'Pathway', 'Flexprice'],
     github: 'https://github.com/HarichandanaThoopukari/my-projects/tree/main/stockmarketAnalysisproject',
     featured: true,
   },
