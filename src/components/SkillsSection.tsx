@@ -1,9 +1,11 @@
-import { Code, Database, Cloud, Brain, Server, Terminal, Lightbulb, Cpu } from 'lucide-react';
+import { Code, Database, Cloud, Brain, Server, Terminal, Lightbulb, Cpu, Languages } from 'lucide-react';
 
 const technicalSkills = [
   { name: 'C', icon: Terminal },
   { name: 'Python', icon: Code },
-  { name: 'HTML/CSS', icon: Code },
+  { name: 'Pandas', icon: Database },
+  { name: 'Matplotlib', icon: Code },
+  { name: 'HTML & CSS', icon: Code },
   { name: 'JavaScript', icon: Code },
   { name: 'SQL', icon: Database },
   { name: 'Operating Systems', icon: Cpu },
@@ -14,6 +16,13 @@ const technicalSkills = [
 const coreStrengths = [
   { name: 'Problem Solving', icon: Lightbulb, description: 'Analytical approach to complex challenges' },
   { name: 'Backend Development', icon: Server, description: 'Building robust server-side solutions' },
+];
+
+const languages = [
+  { name: 'Telugu', level: 'Native' },
+  { name: 'Hindi', level: 'Fluent' },
+  { name: 'English', level: 'Fluent' },
+  { name: 'Deutsch', level: 'Beginner' },
 ];
 
 const SkillsSection = () => {
@@ -55,7 +64,7 @@ const SkillsSection = () => {
         </div>
 
         {/* Core Strengths */}
-        <div>
+        <div className="mb-16">
           <h3 className="font-display text-xl font-semibold text-foreground mb-8 text-center">
             Core Strengths
           </h3>
@@ -82,6 +91,28 @@ const SkillsSection = () => {
                 </div>
               );
             })}
+          </div>
+        </div>
+
+        {/* Languages */}
+        <div>
+          <h3 className="font-display text-xl font-semibold text-foreground mb-8 text-center">
+            Languages I Know
+          </h3>
+          <div className="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto">
+            {languages.map((language, index) => (
+              <div
+                key={language.name}
+                className="card-glass px-6 py-3 rounded-full flex items-center gap-3 hover:scale-105 transition-all duration-300 animate-fade-in-up"
+                style={{ animationDelay: `${(index + 6) * 100}ms` }}
+              >
+                <Languages className="text-primary" size={18} />
+                <span className="font-medium text-foreground">{language.name}</span>
+                <span className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-full">
+                  {language.level}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
