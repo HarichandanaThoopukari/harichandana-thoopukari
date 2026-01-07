@@ -81,11 +81,11 @@ const HeroSection = () => {
           {/* Profile Image */}
           <div className="flex-shrink-0 animate-fade-in animation-delay-300">
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl ring-4 ring-primary/10">
+              <div className="w-80 md:w-96 aspect-[4/5] rounded-3xl overflow-hidden border-4 border-primary/30 shadow-2xl ring-4 ring-primary/10">
                 <img
                   src={profileImage}
                   alt="Harichandana Thoopukari"
-                  className="w-full h-[150%] object-cover object-[center_15%]"
+                  className="w-full h-full object-cover object-[center_60%]"
                 />
               </div>
               {/* Decorative elements */}
