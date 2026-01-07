@@ -85,7 +85,7 @@ const HeroSection = () => {
                 <img
                   src={profileImage}
                   alt="Harichandana Thoopukari"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-[150%] object-cover object-[center_15%]"
                 />
               </div>
               {/* Decorative elements */}
